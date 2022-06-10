@@ -1,0 +1,14 @@
+{
+	"steps": [{
+			"name": "gcr.io/cloud-builders/git",
+			"args": ["clone", "https://github.com/DeepakPatankar/java-hello-world-with-maven.git", "."]
+		},
+		{
+			"name": "gcr.io/cloud-builders/mvn",
+			"args": ["install"]
+		}
+	],
+	"options": {
+		"logStreamingOption": "STREAM_ON"
+	}
+}
